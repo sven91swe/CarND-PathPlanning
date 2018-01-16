@@ -7,7 +7,7 @@ add_definitions(-std=c++11)
 set(CXX_FLAGS "-Wall")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
-set(sources src/main.cpp)
+set(sources src/main.cpp src/support.cpp src/support.h src/VehicleControl.cpp src/VehicleControl.h src/VehicleBehavior.h src/StayInLane.cpp src/StayInLane.h src/ChangeLane.cpp src/ChangeLane.h)
 
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 

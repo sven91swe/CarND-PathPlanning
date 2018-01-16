@@ -1,0 +1,17 @@
+Done:
+    Add struct to send all data from main through various objects and functions
+        Reformat current functions.
+    Add code for calculating starting and final state in XY from SD
+
+    Add code for estimating initial velocities and acceleration in SD
+
+Add code for creating a path based on jerk minimized A vector.
+
+Add class / code for cost / fitness function
+    This will later include prediction for all other vehicles.
+
+Start with 'ACC' and make sure it works smoothly.
+
+Add transfer conditions to laneChange.
+    Make a few 'static' lane changes and evaluate the cost/fitness function for these.
+    Change if laneChange is a better option.
