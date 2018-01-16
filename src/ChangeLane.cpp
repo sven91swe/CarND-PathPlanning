@@ -75,7 +75,7 @@ bool ChangeLane::possibleToChangeToBehavior(vehicleAndMapState &state) {
     if(abs(other_D-middleOfNextLane)<2){
       deltaS = other_S - state.car_s;
       //cout << "deltaS: " << deltaS << " - direction: " << direction << endl;
-      if(-1*max(mph2mps(50-state.car_speed), 5.0) < deltaS && deltaS < mph2mps(state.car_speed)*2.5){
+      if(min(-2*mph2mps(50-state.car_speed), -5.0) < deltaS && deltaS < mph2mps(state.car_speed)*2.5){
         return false;
       }
     }

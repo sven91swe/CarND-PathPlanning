@@ -272,7 +272,6 @@ vector<vector<double>> StayInLane::possiblePath2(vehicleAndMapState &state, doub
     initialSpeed = state.car_speed;
   }
 
-
   double finalSpeed = mph2mps(finalV_mph);
 
 
